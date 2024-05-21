@@ -1,0 +1,17 @@
+<div class="table_container">
+    <table class="kitten_avaible">
+        <thead>
+            <th>My Kitten</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let kitten of kittens">
+                <td><img src="{{kitten.picture}}" alt="picture"></td>
+                <div class="kitten_info hidden">
+                    <td>Name: {{kitten.name}} </td>
+                    <td>Breed: {{kitten.breed}} </td>
+                    <td>Date of birth: {{kitten.birthdate}}</td>
+                </div>
+            </tr>
+        </tbody>
+    </table>
+</div>

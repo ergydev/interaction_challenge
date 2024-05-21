@@ -1,0 +1,20 @@
+<div class="table_container">
+    <table class="kitten_avaible">
+        <thead>
+            <th>Kitten Avaible</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let kitten of kittens">
+                <td><img src="{{kitten.picture}}" alt="picture"></td>
+                <div class="kitten_info hidden">
+                    <td>Name: {{kitten.name}} </td>
+                    <td>Breed: {{kitten.breed}} </td>
+                    <td>Date of birth: {{kitten.birthdate}}</td>
+                </div>
+                <button class="btn_adopt" (click)="onClick(kitten)" >Adopt !</button>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+

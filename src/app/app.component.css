@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+    margin: 10px auto;
+    
+}
+
+.table_section{
+    display: flex;
+    justify-content: center;
+}

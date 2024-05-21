@@ -1,0 +1,19 @@
+<form #kittenForm="ngForm" (ngSubmit)="kittenForm.valid && onSubmit(kittenForm)">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required min="3" [(ngModel)]="newKitten.name" #name="ngModel" >
+    </div>
+    <div>
+        <label for="breed">Breed</label>
+        <input type="text" id="breed" name="breed" required min="3" [(ngModel)]="newKitten.breed" #breed="ngModel">
+    </div>
+    <div>
+        <label for="birthdate">Birth of Date</label>
+        <input type="date" id="birthdate" name="birthdate" required [(ngModel)]="newKitten.birthdate" #birthdate="ngModel">
+    </div>
+    <div>
+        <label for="picture">Picture</label>
+        <input type="url" id="picture" name="picture" required [(ngModel)]="newKitten.picture" #picture="ngModel">
+    </div>
+    <button class="submit" type="submit" [class.valid]="kittenForm.valid">Create</button>
+</form>
